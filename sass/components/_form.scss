@@ -1,0 +1,340 @@
+@mixin icon {
+  display: block;
+  content: "";
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.section__form {
+  background-image: url(/img/img-bgs/bg-2.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__button-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__first-name::before {
+  @include icon;
+  background-image: url(/img/icons/first-name_icon.svg);
+}
+
+.form__second-name::before {
+  @include icon;
+  background-image: url(/img/icons/second-name_icon.svg);
+}
+
+.form__select::before {
+  @include icon;
+  background-image: url(/img/icons/country_icon.svg);
+}
+
+.form__tel::before {
+  @include icon;
+  background-image: url(/img/icons/phone_icon.svg);
+}
+.form__pass::before {
+  @include icon;
+  background-image: url(/img/icons/password_icon.svg);
+}
+.form__pass-confirm::before {
+  @include icon;
+  background-image: url(/img/icons/confirm-password_icon.svg);
+}
+
+.form__email::before {
+  @include icon;
+  background-image: url(/img/icons/email_icon.svg);
+}
+
+// /*------------------------Задний фон----------------------------*/
+
+// .backdrop {
+//   position: fixed;
+
+//   top: 0px;
+//   left: 0px;
+//   width: 100%;
+//   height: 2600px;
+
+//   background-color: rgba(0, 0, 0, 0.2);
+//   opacity: 1;
+//   transition-property: opacity;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   z-index: 100;
+// }
+
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%) scale(0.1);
+// }
+
+// /*---------------------- ОКНО --------------------------------*/
+
+// .modal {
+//   position: absolute;
+//   top: 141px;
+//   left: 50%;
+//   right: 50%;
+//   width: 100%;
+
+//   padding: 8px 8px 40px 40px;
+
+//   // padding-bottom: 0px;
+
+//   transform: translate(-50%) scale(1);
+
+//   transition-property: transform;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   background-color: #ffffff;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+
+//   @include mobile {
+//     width: 450px;
+//     height: 609px;
+//   }
+
+//   @include desktop {
+//     width: 528px;
+//     height: 581px;
+//   }
+// }
+
+// .button-cross {
+//   display: block;
+//   width: 30px;
+//   height: 30px;
+
+//   padding: 0px;
+//   margin: 0px;
+//   margin-left: auto;
+//   margin-right: 0px;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .button-cross:hover,
+// .button-cross:focus {
+//   fill: $accent-text-color;
+// }
+
+// .form {
+//   // margin-bottom: 40px;
+//   margin-right: 32px;
+// }
+
+// .form-list {
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+// .form-item {
+//   position: relative;
+// }
+
+// .form-input {
+//   width: 100%;
+//   height: 40px;
+//   padding: 0px;
+//   padding-left: 42px;
+//   margin: 0px;
+
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+
+//   font-size: 14px;
+// }
+
+// .form-item:focus-within {
+//   fill: $accent-text-color;
+// }
+
+// // .form-input:focus {
+// //   border: 1px solid #2196f3;
+// //   outline: none;
+// // }
+
+// .form-textarea {
+//   padding: 0px;
+//   margin: 0px;
+//   padding: 12px 16px;
+//   width: 100%;
+//   height: 116px;
+//   resize: none;
+
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+
+//   font-size: 14px;
+// }
+
+// .form-textarea:focus {
+//   border: 1px solid #2196f3;
+//   outline: none;
+// }
+
+// .form-title {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 20px;
+//   line-height: 30px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+
+//   color: #212121;
+
+//   text-align: center;
+//   padding: 0px;
+//   margin: 0px;
+//   margin-top: 2px;
+//   margin-bottom: 2px;
+
+//   @include desktop {
+//     line-height: 23px;
+//   }
+// }
+
+// .form-label {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 12px;
+//   line-height: 14px;
+//   letter-spacing: 0.01em;
+
+//   color: #757575;
+
+//   display: inline-block;
+
+//   margin-top: 10px;
+//   margin-bottom: 4px;
+//   // position: relative;
+// }
+// .form-icon {
+//   display: inline-block;
+//   width: 16px;
+//   height: 15px;
+
+//   position: absolute;
+//   transform: translateY(-50%);
+//   top: 48px;
+//   left: 15px;
+
+//   padding: 0px;
+//   margin: 0px;
+// }
+
+// .form-label.text {
+//   font-size: 12px;
+//   line-height: 14px;
+//   letter-spacing: 0.03em;
+//   padding-left: 0px;
+//   margin-top: 20px;
+//   margin-bottom: 30px;
+
+//   @include desktop {
+//     font-size: 14px;
+//     line-height: 24px;
+//     padding-left: 13px;
+//   }
+// }
+
+// .checkbox {
+//   /*Прячим стандартный чекбокс*/
+//   position: absolute !important;
+//   clip: rect(1px 1px 1px 1px);
+//   clip: rect(1px, 1px, 1px, 1px);
+//   padding: 0 !important;
+//   border: 0 !important;
+//   height: 1px !important;
+//   width: 1px !important;
+//   overflow: hidden;
+// }
+
+// .icon-check {
+//   display: inline-block;
+//   width: 16px;
+//   height: 15px;
+//   vertical-align: text-top;
+//   margin-right: 7px;
+
+//   // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-width: 2px;
+//   border-style: solid;
+//   border-radius: 2px;
+//   border-color: #212121;
+// }
+
+// .checkbox:checked + .icon-check {
+//   background-color: #2196f3;
+//   border-radius: 2px;
+//   border-width: 0px;
+//   border-color: #2196f3;
+
+//   background-image: url(../img/icon/check.svg);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   // background-origin: border-box;
+// }
+
+// .banner-button.send {
+//   display: block;
+//   box-sizing: border-box;
+//   border-width: 0px;
+//   border-radius: 4px;
+//   width: 200px;
+//   height: 50px;
+//   margin: 0px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // margin-bottom: 40px;
+//   // transform: translateY(-50%);
+// }

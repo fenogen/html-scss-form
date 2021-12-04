@@ -1,0 +1,61 @@
+/* -----------------------------------                            ГЕОМЕТРИЯ */
+
+.service-flex {
+  // display: flex;
+
+  padding: 0px;
+  margin: 0px;
+  margin-left: -30px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.service-item {
+  margin-left: 30px;
+
+  @include tablet {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.service-item:not(:last-child) {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.service-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.service-item:nth-child(1)::before {
+  background-image: url(../img/logo/antena.svg);
+}
+.service-item:nth-child(2)::before {
+  background-image: url(../img/logo/clock.svg);
+}
+.service-item:nth-child(3)::before {
+  background-image: url(../img/logo/monitor.svg);
+}
+.service-item:nth-child(4)::before {
+  background-image: url(../img/logo/spaceman.svg);
+}

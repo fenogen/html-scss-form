@@ -1,0 +1,103 @@
+.client-list {
+  // display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // margin-left: -15px;   - DESKTOP
+
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.client-item {
+  margin-left: 30px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  @include mobile-end {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @include tablet {
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 4 - 0px);
+  }
+}
+
+.client-item:nth-child(-n + 4) {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+.client-item:nth-child(n + 4) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+  @include tablet {
+    margin-bottom: 0px;
+  }
+}
+
+.client-item:nth-child(n + 1) {
+  /*Перебили выше специфичность у телефона 30 рх
+  что бы правильно отображалась последняя карточка*/
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}
+
+.client-link {
+  color: #afb1b8;
+
+  @include mobile {
+    width: 210px;
+    height: 90px;
+  }
+
+  @include tablet {
+    width: 226px;
+    height: 90px;
+  }
+
+  @include desktop {
+    width: 170px;
+    height: 90px;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: greenyellow; */
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: $accent-text-color;
+  border-color: $accent-text-color;
+}
+
+.client-icon {
+  fill: currentColor;
+}

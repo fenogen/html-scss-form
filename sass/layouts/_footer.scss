@@ -1,0 +1,254 @@
+/*.social-list.black {
+  @include mobile {
+    justify-content: center;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    justify-content: center;
+  }
+}*/
+
+.social-link.black {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-style: hidden;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item.black:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item.black {
+  margin-left: 0px;
+}
+
+.social-item.black:last-child {
+  margin-right: 0px;
+}
+
+.social-link.black:hover,
+.social-link.black:focus {
+  /* color: #ffffff; */
+  background-color: $accent-text-color;
+  border: none;
+  border-style: hidden;
+  border-radius: 50%;
+}
+
+/* --------------------------------------                         ГЕОМЕТРИЯ */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-flexbox {
+  // justify-content: space-between;
+  @include mobile {
+    display: block;
+  }
+
+  @include tablet {
+    display: flex;
+    padding-left: 61px;
+    padding-right: 74px;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-box {
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.footer-box + .footer-box {
+  /*@media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }*/
+
+  @include mobile-end {
+    margin-left: 0px;
+    margin-top: 60px;
+    // padding-left: 122px;
+    // padding-right: 122px;
+  }
+  @include tablet {
+    margin-left: 165px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
+}
+
+.social-connect + .social-list {
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.social-list.black {
+  @include mobile-end {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+  /* background-color: darkgoldenrod; */
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: darkgreen; */
+}
+
+.address-text {
+  margin: 0px;
+}
+.address-email,
+.address-tel {
+  padding-top: 9px;
+}
+
+/*-----------------Подпишись на нас------------*/
+
+.subscribe-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin: 0px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  // background-color: rebeccapurple;
+}
+
+.subsribe-form {
+  // background-color: yellowgreen;
+  margin-right: 0px;
+  margin-left: auto;
+  padding-top: 24px;
+  text-align: center;
+
+  @include mobile {
+    padding-top: 48px;
+    text-align: center;
+  }
+
+  @include tablet {
+    padding-top: 48px;
+    text-align: center;
+  }
+
+  @include desktop {
+    padding-top: 0px;
+    text-align: left;
+  }
+}
+
+.subsribe-box {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+.subscribe-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  transform: translateY(-50%);
+  @include tablet {
+    left: 107px;
+  }
+
+  @include desktop {
+    left: 16px;
+  }
+}
+
+.subscribe-input {
+  height: 50px;
+  width: 100%;
+
+  outline: none;
+  padding: 0px;
+  padding-left: 70px;
+  padding-bottom: 2px;
+  margin: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+
+  @include mobile {
+    width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
+  }
+}
+
+.subscribe-input:focus {
+  border: 1px solid #2196f3;
+  color: #ffffff;
+}
+
+.banner-button.button-send {
+  margin: 0px;
+  margin-top: 20px;
+
+  @include desktop {
+    margin-left: 12px;
+    margin-top: 0px;
+  }
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
