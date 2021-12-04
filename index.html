@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-<h1>Hello</h1>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <section class="section__welcome">
+      <div class="container__welcome">
+        <a class="welcome__logo link" href="./index.html">logo</a>
+        <h1>Find the <span class="span">best place to rest</span>while traveling</h1>
+        <button data-modal-open class="banner-button" type="button">Registration</button>
+      </div>
+    </section>
+    <section class="section__form">
+      <div class="container__form">
+        <h2><span class="span">Sign Up</span> and find the best place to rest while traveling</h2>
+        <form class="form" autocomplete="off">
+          <ul class="list form__list">
+            <li class="item form__item">
+              <label class="form__label" for="input-name"></label>
+              <input class="form__input" type="text" placeholder="First Name" id="input-text" name="title" />
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-name"></label>
+              <input class="form__input" type="text" placeholder="Second Name" id="input-text" name="title" />
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-select"></label>
+              <select id="form-category" class="form__input select" id="input-select" size="1" name="category">
+                <option class="select__option">Country</option>
+                <option class="select__option">Afghanistan</option>
+                <option class="select__option">Albania</option>
+                <option class="select__option">Algeria</option>
+                <option class="select__option">Andorra</option>
+
+              </select>
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-tel"></label>
+              <input class="form__input" type="tel" placeholder="Phone" for="input-tel" name="phone" />
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-password"></label>
+              <input class="form__input" type="password" placeholder="Password" for="input-password" name="password" />
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-password"></label>
+              <input
+                class="form__input"
+                type="password"
+                placeholder="Confirm password"
+                for="input-password"
+                name="password"
+              />
+            </li>
+            <li class="item form__item">
+              <label class="form__label" for="input-email"></label>
+              <input class="form__input" type="email" placeholder="Phone" for="input-email" name="email" />
+            </li>
+            <li class="item form__item">
+              <input class="form__input" type="checkbox" placeholder="Phone" for="input-checkbox" name="checkbox" />
+              <label class="form__label" for="input-checkbox">I agree to the Terms & Conditions</label>
+            </li>
+          </ul>
+          <button class="button-submit" type="submit" data-action="submit">Sign Up</button>
+        </form>
+        <p>
+          If you have an account,
+          <a class="header-logo link" href="./index.html">Log In</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
