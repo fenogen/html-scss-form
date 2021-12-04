@@ -13,7 +13,7 @@
 
 // /*-------------------------------REGISTR--------------------------*/
 .registr__title {
-  // color: #ffffff;
+  color: $first-text-color;
   font-family: Rubik-Medium;
   font-style: normal;
   font-size: 30px;
@@ -32,6 +32,7 @@
 
 // /*-------------------------------FORM--------------------------*/
 .form__title {
+  color: $first-text-color;
   font-family: Rubik-Medium;
   font-style: normal;
   font-size: 19px;
@@ -39,8 +40,12 @@
   text-align: center;
 }
 
+.form__input {
+  color: $little-text-color;
+}
+
 .form__button {
-  color: #000000;
+  color: $second-text-color;
   font-family: Rubik-Medium;
   font-style: normal;
   font-size: 19px;
@@ -49,11 +54,12 @@
 }
 
 .text {
-  color: #e0e0e0;
+  color: $little-text-color;
   font-family: Rubik-Light;
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
+  text-align: center;
 }
 
 // /*--------------------------------------SERVICE---------------------------*/
