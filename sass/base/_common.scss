@@ -7,10 +7,6 @@ html {
   box-sizing: inherit;
 }
 
-.link {
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
 }
@@ -21,42 +17,9 @@ img {
   height: auto;
 }
 
-// .container {
-//   // width: 1200px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   /* outline: 1px solid blue; */
-
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//     // background-color: pink;
-//   }
-//   @include tablet {
-//     width: 768px;
-//     // background-color: skyblue;
-//   }
-//   @include desktop {
-//     width: 1200px;
-//     // background-color: yellowgreen;
-//   }
-// }
-
-// .section {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-
-//   @include mobile {
-//     /*автоматом и tablet*/
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//   }
-//   @include desktop {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
-// }
+.link {
+  text-decoration: none;
+}
 
 .list {
   list-style: none;

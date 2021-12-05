@@ -12,28 +12,50 @@
 .section__form {
   background-image: url(/img/img-bgs/bg-2.jpg);
   background-size: cover;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0px;
-  height: 100vh;
+  @include desktop {
+    padding-top: 210px;
+    padding-bottom: 15px;
+  }
 }
 
 .form__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+.form__box {
+  @include desktop {
+    min-width: 546px;
+    max-width: 630px;
+    margin: auto;
+  }
 }
 
 .form__list {
   margin: 0;
   padding: 0;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .item {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  // display: block;
+  @include desktop {
+    flex-basis: calc(100% / 2 - 15px);
+  }
 }
 
 .form__input {
@@ -61,8 +83,12 @@
 .form__button-box {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 50px;
   margin-bottom: 60px;
+  @include desktop {
+    margin-top: 30px;
+    margin-bottom: 160px;
+  }
 }
 
 .form__button {
@@ -77,6 +103,11 @@
   transition-property: background-color, color;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include desktop {
+    width: 170px;
+    height: 55px;
+  }
 }
 .form__button:hover,
 .form__button:focus {

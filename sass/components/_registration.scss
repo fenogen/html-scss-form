@@ -7,17 +7,23 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0px;
-  @include tablet {
+  @include desktop {
     padding-top: 285px;
+    padding-bottom: 285px;
   }
 }
 
 .registr__title {
-  //   margin-top: 260px;
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
+  @include desktop {
+    margin-bottom: 40px;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .registr__title::before {
@@ -29,6 +35,11 @@
   height: 30px;
   margin: auto;
   margin-bottom: 20px;
+  @include desktop {
+    width: 190px;
+    height: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .registr__button-box {
@@ -38,8 +49,8 @@
 
 .registr__button {
   background-color: inherit;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   justify-content: center;
   border: 2px solid $accent-first-color;
@@ -49,6 +60,10 @@
   transition-property: background-color, color;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    width: 215px;
+    height: 55px;
+  }
 }
 
 .registr__button:hover,

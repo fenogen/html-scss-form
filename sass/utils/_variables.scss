@@ -4,71 +4,8 @@ $little-text-color: #e0e0e0;
 $accent-first-color: #6ceec7;
 $accent-second-color: #67d9b7;
 
-// // // $mobile: @media screen and (min-width: 320px);
-
-@mixin mobile {
-  @media screen and (max-width: 361px) {
+@mixin desktop {
+  @media screen and (min-width: 576px) {
     @content;
   }
 }
-
-@mixin tablet {
-  @media screen and (min-width: 361px) and (max-width: 575px) {
-    @content;
-  }
-}
-// // @mixin mobile-end {
-// //   @media screen and (max-width: 767px) {
-// //     @content;
-// //   }
-// // }
-
-// // @mixin tablet {
-// //   @media screen and (min-width: 576px) {
-// //     @content;
-// //   }
-// // }
-
-// // @mixin tablet-end {
-// //   @media screen and (max-width: 1199px) {
-// //     @content;
-// //   }
-// // }
-
-// // @mixin desktop {
-// //   @media screen and (min-width: 1200px) {
-// //     @content;
-// //   }
-// // }
-
-// @mixin media-size($range) {
-//   $mobile: 360px;
-//   $tablet: 576px;
-//   $desktop: 1200px;
-
-//   @if $range == tablet-1 {
-//     @media screen and (max-width: #{$tablet - 1}) {
-//       @content;
-//     }
-//   } @else if $range == desktop-1 {
-//     @media screen and (max-width: #{$desktop - 1}) {
-//       @content;
-//     }
-//   } @else if $range == min-tablet-desktop-1 {
-//     @media screen and (min-width: $tablet) and (max-width: #{$desktop - 1}) {
-//       @content;
-//     }
-//   } @else if $range == min-mobile {
-//     @media screen and (min-width: $mobile) {
-//       @content;
-//     }
-//   } @else if $range == min-tablet {
-//     @media screen and (min-width: $tablet) {
-//       @content;
-//     }
-//   } @else if $range == min-desktop {
-//     @media screen and (min-width: $desktop) {
-//       @content;
-//     }
-//   }
-// }
