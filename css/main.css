@@ -28,12 +28,12 @@ img {
 
 @font-face {
   font-family: Rubik-Light;
-  src: url(../../fonts/Rubik-Light.ttf);
+  src: url(../fonts/Rubik-Light.ttf);
 }
 
 @font-face {
   font-family: Rubik-Medium;
-  src: url(../../fonts/Rubik-Medium.ttf);
+  src: url(../fonts/Rubik-Medium.ttf);
 }
 
 .span {
@@ -111,7 +111,7 @@ img {
 }
 
 .section__registr {
-  background-image: url(../img/img-bgs/bg-1.jpg);
+  background-image: url(./img/img-bgs/bg-1.jpg);
   background-size: cover;
   height: 100vh;
   padding-top: 240px;
