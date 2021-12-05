@@ -17,11 +17,12 @@
       <div class="container__registr">
         <h1 class="registr__title">Find the <span class="span">best place to rest </span>while traveling</h1>
         <div class="registr__button-box">
-        <button data-modal-open class="registr__button" type="button">Registration</button>
+        <button data-modal-open class="registr__button" type="submit">
+          <a class="registr__link" href="#form">Registration</a></button>
         </div>
       </div>
     </section>
-    <section class="section__form">
+    <section class="section__form" id="form">
       <div class="container__form">
         <h2 class="form__title"><span class="span">Sign Up</span> and find the best place to rest while traveling</h2>
         <div class="form__box">
@@ -29,16 +30,16 @@
           <ul class="list form__list">
             <li class="item form__first-name">
               <label class="form__label" for="input-firstName"></label>
-              <input class="form__input" type="text" placeholder="First Name" id="input-firstName" name="title" />
+              <input class="form__input" type="text" placeholder="First Name" id="input-firstName" name="title" minlength="2"/>
             </li>
             <li class="item form__second-name">
               <label class="form__label" for="input-secondName"></label>
-              <input class="form__input" type="text" placeholder="Second Name" id="input-secondName" name="title" />
+              <input class="form__input" type="text" placeholder="Second Name" id="input-secondName" name="title" minlength="2"/>
             </li>
             <li class="item form__select">
               <label class="form__label" for="input-select"></label>
-              <select class="form__input select" id="input-select" size="1" name="category">
-                <option class="select__option main">Country</option>
+              <select class="form__input select" id="input-select" size="1" name="category" required>
+                <option class="select__option" hidden>Country</option>
                 <option class="select__option">Afghanistan</option>
                 <option class="select__option">Albania</option>
                 <option class="select__option">Algeria</option>
@@ -47,11 +48,11 @@
             </li>
             <li class="item form__tel">
               <label class="form__label" for="input-tel"></label>
-              <input class="form__input" type="tel" placeholder="Phone" id="input-tel" name="tel" />
+              <input class="form__input" type="tel" placeholder="Phone" id="input-tel" name="tel" required pattern="^[ 0-9]+$"/>
             </li>
             <li class="item form__pass">
               <label class="form__label" for="input-password"></label>
-              <input class="form__input" type="password" placeholder="Password" id="input-password" name="password" />
+              <input class="form__input" type="password" placeholder="Password" id="input-password" name="password" required/>
             </li>
             <li class="item form__pass-confirm">
               <label class="form__label" for="input-confirmPassword"></label>
@@ -61,11 +62,12 @@
                 placeholder="Confirm password"
                 id="input-confirmPassword"
                 name="password"
+                required
               />
             </li>
             <li class="item form__email">
               <label class="form__label" for="input-email"></label>
-              <input class="form__input" type="email" placeholder="Phone" id="input-email" name="email" />
+              <input class="form__input" type="email" placeholder="Email" id="input-email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
             </li>
             <li class="item form__checkbox">
               <input class="form__input-checkbox" type="checkbox" id="input-checkbox" name="checkbox" />
@@ -84,12 +86,7 @@
         </p>
       </div>
     </section>
-<div class="container">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

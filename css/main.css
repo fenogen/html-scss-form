@@ -198,6 +198,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.registr__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section__form {
   background-image: url(/img/img-bgs/bg-2.jpg);
   background-size: cover;
@@ -267,6 +272,10 @@ img {
   width: 100%;
   height: 60px;
   padding-left: 50px;
+}
+
+.form__input:focus {
+  outline: none;
 }
 
 .form__input:hover {
