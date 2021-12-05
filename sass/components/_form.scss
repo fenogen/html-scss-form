@@ -10,7 +10,7 @@
 }
 
 .section__form {
-  background-image: url(/img/img-bgs/bg-2.jpg);
+  background-image: url(../img/img-bgs/bg-2.jpg);
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -141,33 +141,33 @@
 
 .form__first-name::before {
   @include icon;
-  background-image: url(/img/icons/first-name_icon.svg);
+  background-image: url(../img/icons/first-name_icon.svg);
 }
 
 .form__second-name::before {
   @include icon;
-  background-image: url(/img/icons/second-name_icon.svg);
+  background-image: url(../img/icons/second-name_icon.svg);
 }
 
 .form__select::before {
   @include icon;
-  background-image: url(/img/icons/country_icon.svg);
+  background-image: url(../img/icons/country_icon.svg);
 }
 
 .form__tel::before {
   @include icon;
-  background-image: url(/img/icons/phone_icon.svg);
+  background-image: url(../img/icons/phone_icon.svg);
 }
 .form__pass::before {
   @include icon;
-  background-image: url(/img/icons/password_icon.svg);
+  background-image: url(../img/icons/password_icon.svg);
 }
 .form__pass-confirm::before {
   @include icon;
-  background-image: url(/img/icons/confirm-password_icon.svg);
+  background-image: url(../img/icons/confirm-password_icon.svg);
 }
 
 .form__email::before {
   @include icon;
-  background-image: url(/img/icons/email_icon.svg);
+  background-image: url(../img/icons/email_icon.svg);
 }

@@ -111,7 +111,7 @@ img {
 }
 
 .section__registr {
-  background-image: url(/img/img-bgs/bg-1.jpg);
+  background-image: url(../img/img-bgs/bg-1.jpg);
   background-size: cover;
   height: 100vh;
   padding-top: 240px;
@@ -148,7 +148,7 @@ img {
   display: block;
   content: "";
   background-size: cover;
-  background-image: url(/img/logo.svg);
+  background-image: url(../img/logo.svg);
   width: 120px;
   height: 30px;
   margin: auto;
@@ -204,7 +204,7 @@ img {
 }
 
 .section__form {
-  background-image: url(/img/img-bgs/bg-2.jpg);
+  background-image: url(../img/img-bgs/bg-2.jpg);
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -359,7 +359,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/first-name_icon.svg);
+  background-image: url(../img/icons/first-name_icon.svg);
 }
 
 .form__second-name::before {
@@ -371,7 +371,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/second-name_icon.svg);
+  background-image: url(../img/icons/second-name_icon.svg);
 }
 
 .form__select::before {
@@ -383,7 +383,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/country_icon.svg);
+  background-image: url(../img/icons/country_icon.svg);
 }
 
 .form__tel::before {
@@ -395,7 +395,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/phone_icon.svg);
+  background-image: url(../img/icons/phone_icon.svg);
 }
 
 .form__pass::before {
@@ -407,7 +407,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/password_icon.svg);
+  background-image: url(../img/icons/password_icon.svg);
 }
 
 .form__pass-confirm::before {
@@ -419,7 +419,7 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/confirm-password_icon.svg);
+  background-image: url(../img/icons/confirm-password_icon.svg);
 }
 
 .form__email::before {
@@ -431,6 +431,6 @@ img {
   position: absolute;
   margin-top: 20px;
   margin-left: 15px;
-  background-image: url(/img/icons/email_icon.svg);
+  background-image: url(../img/icons/email_icon.svg);
 }
 /*# sourceMappingURL=main.css.map */
